@@ -244,8 +244,8 @@ meson-logs/
 *.dylib
 *.dll
 
-# Local Data
-data/
+# Local Data (ignore DB contents, keep folder structure)
+data/chroma_db/
 data_backup/
 
 # AI tool configs
@@ -259,3 +259,13 @@ run_project.bat
 RUN_INSTRUCTIONS.md
 
 RESUME_CONTENT.md
+
+# graphify internal files (keep only graph.html, graph.json, GRAPH_REPORT.md)
+graphify-out/.graphify_python
+graphify-out/cache/
+graphify-out/cost.json
+graphify-out/manifest.json
+graphify-out/.graphify_*.json
+graphify-out/.graphify_*.txt
+graphify-out/.needs_update
+graphify-out/.graphify_old.json
